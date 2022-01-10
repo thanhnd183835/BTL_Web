@@ -25,6 +25,6 @@ bower install
 **Restore database (need to install MongoDB first)**: open cmd, cd to db folder and run below command
 
 ```
-mongorestore123
+mongorestore
 
 Run `node server` and see it in **http://localhost:3000**
