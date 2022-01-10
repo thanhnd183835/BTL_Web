@@ -1,6 +1,6 @@
 Admin: ducthanhbk1998@gmail.com - 159357
 
-User: sangit7b@gmail.com - 123456789
+User: thanh@gmail.com - 123456789
 
 **Required**: Please install them before install azquestion
 
