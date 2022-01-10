@@ -26,6 +26,5 @@ bower install
 
 ```
 mongorestore
-```
 
 Run `node server` and see it in **http://localhost:3000**
