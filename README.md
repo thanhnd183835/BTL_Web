@@ -2,7 +2,7 @@ Admin: ducthanhbk1998@gmail.com - 159357
 
 User: thanh@gmail.com - 123456789
 
-**Required**: Please install them before install azquestion
+**Required**: Please install them before install MDTHQuestions
 
 - NodeJS: > 10.0.x.
 - Bower (run `npm install -g bower` after install NodeJS).
