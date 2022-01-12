@@ -10,8 +10,10 @@
                             <label>Email</label>
                             <input type="email" required name="email" ng-model="userData.email" autocomplete="off">
                             <div ng-messages="form.email.$error" ng-if="form.email.$dirty">
-                                <div ng-message="required">Email không được bỏ trống</div>
-                                <div ng-message="email">Email không hợp lệ</div>
+                                <div ng-if="form.email.$error.required">Email không được bỏ trống <br> 
+                                    Email không hợp lệ
+                                </div>
+                                <div ng-if="form.email.$error.email">Email không hợp lệ</div>
                             </div>
                             </md-input-container>
                         </div>
@@ -20,9 +22,7 @@
                             <label>Tên hiển thị</label>
                             <input required name="username" ng-model="userData.displayName" autocomplete="off">
                             <div ng-messages="form.username.$error" ng-if="form.username.$dirty"  md-maxlength="25" minlength="8">
-                                <div ng-message="required">Tên không được bỏ trống.</div>
-                                <div ng-message="minlength">Tên phải dài hơn 8 ký tự</div>
-                                <div ng-message="md-maxlength">Tên phải ngắn hơn 25 ký tự</div>
+                                <div ng-if="form.username.$invalid">Tên không được bỏ trống.</div>
                             </div>
                             </md-input-container>
                         </div>
@@ -33,9 +33,9 @@
                             <label>Mật khẩu</label>
                             <input type="password" required name="password" ng-model="userData.password"  md-maxlength="25" minlength="8">
                             <div ng-messages="form.password.$error" ng-if="form.password.$dirty">
-                                <div ng-message="required">Mật khẩu không được bỏ trống.</div>
-                                <div ng-message="minlength">Mật khẩu phải dài hơn 8 ký tự</div>
-                                <div ng-message="md-maxlength">Mật khẩu phải ngắn hơn 25 ký tự</div>
+                                <div ng-if="form.password.$error.required">Mật khẩu không được bỏ trống.</div>
+                                <div ng-if="form.password.$error.minlength">Mật khẩu phải dài hơn 8 ký tự</div>
+                                <div ng-if="form.password.$error.md-maxlength">Mật khẩu phải ngắn hơn 25 ký tự</div>
                             </div>
                             </md-input-container>
                         </div>
@@ -44,7 +44,7 @@
                             <label>Xác nhận mật khẩu</label>
                             <input type="password" required name="re_password" ng-model="userData.repassword" password-match="userData.password">
                             <div ng-messages="form.re_password.$error" ng-if="form.re_password.$dirty">
-                                <div ng-message="unique">Password không trùng khớp</div>
+                                <div ng-if="form.re_password.$error.unique">Password không trùng khớp </div>
                             </div>
                             </md-input-container>
                         </div>
