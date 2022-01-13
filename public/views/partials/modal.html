@@ -22,7 +22,7 @@
                 <h4 class="preview-title">Khung soạn thảo câu hỏi <span class="pull-right" data-toggle="modal"
                         data-target="#myModal" style="cursor: pointer; color: #1d9977"><i class="fa fa-question"></i>
                         Hướng dẫn</span></h4>
-                <textarea class="form-control" rows="12" ng-model="formData.content" required="required" id="mirror"
+                <textarea class="form-control" rows="12" ng-model="formData.content" required my-directive id="mirror"
                     style="resize:none"></textarea>
             </div>
             <div class="col-md-6  hidden-sm hidden-xs">
@@ -34,7 +34,7 @@
         </div>
         <button class="btn btn-primary" type="button" ng-click="upload()"><i class="fa fa-cloud-upload"></i> Upload
             ảnh</button>
-        <button class="btn btn-submit" type="submit" ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)"><i
+        <button class="btn btn-submit" type="submit" ng-disabled="form.$invalid"><i
                 class="fa fa-edit" ng-show="!Proccess"></i><i class="fa fa-spinner fa-spin" ng-show="Proccess"></i> Đăng
             câu hỏi</button>
         <span class="btn btn-danger" ng-click="closeForm()"><i class="fa fa-times"></i> Hủy bỏ</span><br>
