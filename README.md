@@ -4,7 +4,7 @@ User: thanh.nd1998@gmail.com - 12345678
 
 **Required**: Please install them before install MDTHQuestions
 
-- NodeJS: > 10.0.x.
+- NodeJS: = 5.12.0
 - Bower (run `npm install -g bower` after install NodeJS).
 - MongoDB.
 
