@@ -1,6 +1,6 @@
 Admin: ducthanhbk1998@gmail.com - 159357
 
-User: thanh@gmail.com - 123456789
+User: thanh.nd1998@gmail.com - 12345678
 
 **Required**: Please install them before install MDTHQuestions
 
