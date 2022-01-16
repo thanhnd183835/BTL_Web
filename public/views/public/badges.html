@@ -61,7 +61,7 @@
                 <tbody>
                     <tr ng-repeat="b in listBadge | orderBy:'score'">
                         <td>{{$index+1}}</td>
-                        <td><a href="#"><span ng-bind="b.name" class="user-badge" style="background: {{b.color}}"></span></a></td>
+                        <td><a href="#"><span ng-bind="b.name" class="user-badge"></span></a></td>
                         <td ng-bind="b.score"></td>
                         <td ng-bind="b.description"></td>
                     </tr>
@@ -71,16 +71,17 @@
     </div>
 </div>
 <style>
-.table th:nth-child(1),
-.table td:nth-child(1),
-.table th:nth-child(3),
-.table td:nth-child(3) {
-text-align: center;
-max-width: 100px;
-}
-.table th:nth-child(4),
-.table td:nth-child(4){
-text-align: left;
-width: auto;
-}
+    .table th:nth-child(1),
+    .table td:nth-child(1),
+    .table th:nth-child(3),
+    .table td:nth-child(3) {
+        text-align: center;
+        max-width: 100px;
+    }
+
+    .table th:nth-child(4),
+    .table td:nth-child(4) {
+        text-align: left;
+        width: auto;
+    }
 </style>
