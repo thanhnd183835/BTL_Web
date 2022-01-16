@@ -4,7 +4,8 @@
             <span><i class="fa fa-user"></i> Quản lý thành viên</span>
         </div>
         <div class="pull-right">
-            <a ui-sref="system" class="btn btn-submit btn-return"><i class="fa fa-mail-reply"></i> Quay lại Bảng điều khiển</a>
+            <a ui-sref="system" class="btn btn-submit btn-return"><i class="fa fa-mail-reply"></i> Quay lại Bảng điều
+                khiển</a>
         </div>
         <div class="clearfix"></div>
         <!-- END SELECT-CATEGORY -->
@@ -22,16 +23,20 @@
                     <div class="form-group">
                         <label for="score" class="col-sm-4 control-label required">Nhóm thành viên</label>
                         <div class="col-sm-8">
-                            <md-select name="myModel" placeholder="Pick" ng-model="formData.role" style="padding-top:0" required>
-                            <md-option value="user"  ng-selected="formData.role=='user'">Thành viên</md-option>
-                            <md-option value="admin"  ng-selected="formData.role=='admin'">Quản trị viên</md-option>
+                            <md-select name="myModel" placeholder="Pick" ng-model="formData.role" style="padding-top:0"
+                                required>
+                                <md-option value="user" ng-selected="formData.role=='user'">Thành viên</md-option>
+                                <md-option value="admin" ng-selected="formData.role=='admin'">Quản trị viên</md-option>
                             </md-select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-4 control-label">&nbsp;</label>
                         <div class="col-sm-8">
-                            <md-button type="submit" ng-click="updatePermission()" ng-disabled="!formData.role" class="md-raised md-primary"><small><span ng-show="!Proccess"><i class="fa fa-edit"></i></span><span ng-show="Proccess" ><i class="fa fa-spinner fa-spin"></i></span></small> Cập nhật</md-button>
+                            <md-button type="submit" ng-click="updatePermission()" ng-disabled="!formData.role"
+                                class="md-raised md-primary"><small><span ng-show="!Proccess"><i
+                                            class="fa fa-edit"></i></span><span ng-show="Proccess"><i
+                                            class="fa fa-spinner fa-spin"></i></span></small> Cập nhật</md-button>
                         </div>
                     </div>
                 </form>
